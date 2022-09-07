@@ -1,2 +1,2 @@
 #!/bin/bash
-print "%.2d\n" $NUM
+printf "%.2d\n" $NUM
