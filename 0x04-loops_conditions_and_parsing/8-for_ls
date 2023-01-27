@@ -3,6 +3,5 @@
 # Displays content after first dash
 # "1-add" becomes "add"
 for FILE in *; do
-    echo $(ls cut -d "-")
-EOF
+    cut -d "-" -f2 <<< "$FILE"
 done
