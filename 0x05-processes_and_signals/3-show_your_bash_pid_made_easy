@@ -2,7 +2,7 @@
 # display PID with the process name 'bash'
 process="bash"
 pids=$(pidof $process)
-pidarray=($pids)
+pidarray=("$pids")
 
 for id in "${pidarray[@]}"; do
     echo "$id $process"
