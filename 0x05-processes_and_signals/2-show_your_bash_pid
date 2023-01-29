@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# display processes starting with the bash keyword
+# shellcheck disable=SC2009
+str=$(ps auxf | grep -i 'bash')
+echo $str
