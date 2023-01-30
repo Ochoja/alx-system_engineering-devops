@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Stops a process run by bash script
-kill $(pidof bash)
+pids="$(pgrep 4-to_infinity_and_beyond)"
+kill $pids
