@@ -1,9 +1,3 @@
 #!/usr/bin/env bash
 # display PID with the process name 'bash'
-process="bash"
-pids=$(pidof $process)
-pidarray=("$pids")
-
-for id in "${pidarray[@]}"; do
-    echo "$id $process"
-done
+pgrep -l bash
