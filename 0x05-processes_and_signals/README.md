@@ -12,3 +12,7 @@
 4. kill
 5. exit
 6. trap
+
+## More Commands
+1. sleep
+2. pidof
