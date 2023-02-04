@@ -1,4 +1,18 @@
 #!/usr/bin/env bash
 # Display all active IPV4 IPs on the machine it is executed on
-curl ifconfig.me
-ifconfig -a
+
+# save ips
+ips=$(hostname -I)
+
+# split by space
+ips="(${ips//" "/})"
+
+for ip in "${ips[@]}"; do
+    # get length of string
+    n=$(expr "$ip" : '.*')
+
+    # use length to print only IPV4 addresses
+    if ((n < 15)); then
+	echo "$ip"
+    fi
+done
