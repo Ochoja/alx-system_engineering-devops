@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-apt -y install nginx
-mkdir -p /var/www/html
-touch /var/www/html/index.html
+# configure Nginx
+sudo apt-get update -y
+sudo apt -y install nginx
+sudo mkdir -p /var/www/html
+sudo touch /var/www/html/index.html
 echo "Hello World!" >> /var/www/html/index.html
