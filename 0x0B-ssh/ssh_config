@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Connect to server without typing a password
+ssh-copy-id -i ~/.ssh/ssh-key.pub ubuntu@100.26.228.20
+eval $(ssh-agent -s)
+ssh-add ~/ssh-key
